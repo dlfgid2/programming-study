@@ -1,0 +1,248 @@
+from pyrobot import *
+
+def return_home(r):
+	r.reset()
+	while not r.facing_east():
+		r.turn_right()
+
+	r.set_trace(color='red')
+	pass
+
+def draw_id(r,num):
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+		
+	
+	
+	
+
+
+def solve_maze(r):
+	for s in range(10):
+		r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_right()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.turn_left()
+	r.move()
+	r.move()
+	r.turn_left()
+	r.move()
+	
+
+
+	
+	
+
+		
+		
+		
+	
+	
+	
+
+
+        
+		
+			
+		
+			
+		
+	
+	
+
+
+
+def run():
+	load_world("proj.wd")
+
+	robot = PyRobot()
+	robot.set_pause(delay=1)
+	robot.set_trace(color='blue')
+	draw_id(robot,1000)
+	return_home(robot)
+	solve_maze(robot)
+
+
+	
+
+if __name__ == "__main__":
+	run()
