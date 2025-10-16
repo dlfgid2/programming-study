@@ -70,6 +70,7 @@ int main() {
     }
     else {
         printf("Read failed\n");
+        printf("g")
     }
 
     CloseHandle(hFile);
